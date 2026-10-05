@@ -38,7 +38,7 @@ footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);color:v
 <body><div class="wrap">
 <nav><a href="./" class="on">English</a><a href="./ko.html" class="">한국어</a></nav>
 <h1>ChartWise — Privacy Policy</h1>
-<p><strong>Last updated:</strong> July 26, 2026
+<p><strong>Last updated:</strong> October 5, 2026
 <strong>App:</strong> ChartWise (Android &amp; iOS)
 <strong>Developer / Data controller:</strong> ChartWise
 <strong>Contact:</strong> seolasoft@gmail.com</p>
@@ -50,7 +50,9 @@ have. <strong>ChartWise is for education and entertainment only and is not inves
 <ul>
 <li><strong>Your game data stays on your device.</strong> Progress, streaks, scores, statistics, and
   settings are stored locally on your phone and are <strong>not transmitted to our servers</strong>.
-  We do not operate a user account system and do not collect your game data.</li>
+  We do not operate a user account system and do not collect your game data.
+  <strong>One optional exception:</strong> if you turn on <strong>Global daily ranking</strong> (off by default), your
+  daily‑challenge score is sent anonymously to show your percentile (Section 3.4).</li>
 <li>The app shows <strong>ads</strong> (Google AdMob) and uses <strong>analytics</strong> (Google Firebase Analytics).
   These third‑party SDKs may collect limited device and usage data as described below.</li>
 <li><strong>Analytics runs only after you consent</strong>, and can be turned off at any time in
@@ -101,6 +103,19 @@ cannot access, export, or delete it for you.</p>
   analytics purposes. Apple's App Tracking Transparency (ATT) prompt (iOS) asks for
   permission to use the advertising identifier for tracking.</li>
 </ul>
+<h3>3.4 Optional global daily ranking (Google Firebase Authentication &amp; Cloud Firestore)</h3>
+<ul>
+<li><strong>Off by default.</strong> Only if you turn on <strong>Settings → Global daily ranking</strong>.</li>
+<li><strong>What is sent:</strong> when you finish the Daily Challenge, that day's score and number of
+  correct answers, the date, and a random anonymous identifier created by Firebase
+  Authentication (anonymous sign‑in). <strong>No name, email, device identifier, or advertising
+  ID is sent.</strong></li>
+<li><strong>Purpose:</strong> only to show what percentile you placed among that day's players. Other
+  players cannot see individual scores.</li>
+<li><strong>Your choice:</strong> turn the setting off at any time to stop sending scores. To delete scores
+  already sent, email us (Section 12).</li>
+<li>Firebase privacy: https://firebase.google.com/support/privacy</li>
+</ul>
 <p>We do not sell your personal information.</p>
 <hr />
 <h2>4. Why we process this data (legal bases)</h2>
@@ -123,7 +138,8 @@ cannot access, export, or delete it for you.</p>
 </ul>
 <hr />
 <h2>6. Data sharing</h2>
-<p>We do not share game data because we do not collect it. The third‑party SDKs above process
+<p>We do not share game data. Optional ranking scores (Section 3.4) are stored in Google Cloud
+Firestore on our behalf and are used only to compute daily percentiles. The third‑party SDKs above process
 data as independent controllers/processors under their own policies for the purposes
 described. We may disclose information if required by law.</p>
 <hr />
@@ -132,6 +148,8 @@ described. We may disclose information if required by law.</p>
 <li>On‑device data persists until you delete it or uninstall the app.</li>
 <li>Data processed by AdMob and Firebase is retained per Google's policies and your
   Firebase/AdMob configuration.</li>
+<li>Optional ranking scores (Section 3.4) are kept only as long as needed for daily rankings;
+  you can request deletion at any time by email.</li>
 </ul>
 <hr />
 <h2>8. Children</h2>

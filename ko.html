@@ -38,7 +38,7 @@ footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);color:v
 <body><div class="wrap">
 <nav><a href="./" class="">English</a><a href="./ko.html" class="on">한국어</a></nav>
 <h1>ChartWise — 개인정보처리방침</h1>
-<p><strong>최종 업데이트:</strong> 2026년 7월 26일
+<p><strong>최종 업데이트:</strong> 2026년 10월 5일
 <strong>앱:</strong> ChartWise (Android &amp; iOS)
 <strong>개발자 / 개인정보처리자:</strong> ChartWise
 <strong>문의:</strong> seolasoft@gmail.com</p>
@@ -53,7 +53,8 @@ footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);color:v
 <ul>
 <li><strong>게임 데이터는 기기에 남습니다.</strong> 진척도, 스트릭, 점수, 통계, 설정은 이용자의 휴대폰에 로컬로
   저장되며 <strong>당사 서버로 전송되지 않습니다.</strong> 당사는 계정 시스템을 운영하지 않으며 이용자의 게임
-  데이터를 수집하지 않습니다.</li>
+  데이터를 수집하지 않습니다. <strong>단 하나의 선택적 예외:</strong> <strong>일일 챌린지 전체 순위</strong>를 켠 경우(기본
+  꺼짐)에 한해 상위 %를 보여 주기 위해 일일 점수를 익명으로 전송합니다(제3.4항).</li>
 <li>앱은 <strong>광고</strong>(Google AdMob)를 표시하고 <strong>분석</strong>(Google Firebase Analytics)을 사용합니다. 이
   제3자 SDK는 아래에 설명한 대로 제한된 기기·이용 데이터를 수집할 수 있습니다.</li>
 <li><strong>분석은 이용자가 동의한 경우에만 작동</strong>하며, <strong>설정 → 분석</strong>에서 언제든 끌 수 있습니다.</li>
@@ -100,6 +101,17 @@ footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);color:v
 <li>UMP는 필요한 지역(예: EEA/영국)에서 광고·분석 목적을 고지하는 동의 양식을 표시합니다. Apple의
   앱 추적 투명성(ATT) 프롬프트(iOS)는 추적을 위한 광고 식별자 사용 권한을 요청합니다.</li>
 </ul>
+<h3>3.4 선택 기능: 일일 챌린지 전체 순위 (Google Firebase 인증·Cloud Firestore)</h3>
+<ul>
+<li><strong>기본 꺼짐.</strong> <strong>설정 → 일일 챌린지 전체 순위</strong>를 켠 경우에만 작동합니다.</li>
+<li><strong>전송 항목:</strong> 일일 챌린지를 마치면 그날의 점수와 정답 수, 날짜, Firebase 인증(익명 로그인)이
+  만든 임의의 익명 식별자. <strong>이름·이메일·기기 식별자·광고 ID는 보내지 않습니다.</strong></li>
+<li><strong>목적:</strong> 그날 참가자 중 상위 몇 %인지 보여 주는 용도로만 씁니다. 다른 이용자는 개별 점수를 볼 수
+  없습니다.</li>
+<li><strong>선택권:</strong> 설정을 끄면 언제든 전송이 멈춥니다. 이미 보낸 점수의 삭제는 이메일로 요청할 수
+  있습니다(제12항).</li>
+<li>Firebase 개인정보: https://firebase.google.com/support/privacy</li>
+</ul>
 <p>당사는 이용자의 개인정보를 판매하지 않습니다.</p>
 <hr />
 <h2>4. 데이터 처리의 근거 (법적 근거)</h2>
@@ -125,7 +137,8 @@ footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);color:v
 </ul>
 <hr />
 <h2>6. 데이터 제공·공유</h2>
-<p>당사는 게임 데이터를 수집하지 않으므로 공유하지 않습니다. 위 제3자 SDK는 자체 방침에 따라 설명된
+<p>당사는 게임 데이터를 공유하지 않습니다. 선택 기능인 순위 점수(제3.4항)는 당사를 위해 Google Cloud
+Firestore에 저장되며 일일 상위 % 계산에만 쓰입니다. 위 제3자 SDK는 자체 방침에 따라 설명된
 목적을 위해 독립적인 처리자로서 데이터를 처리합니다. 법령상 요구되는 경우 정보를 제공할 수 있습니다.</p>
 <hr />
 <h2>7. 데이터 보관</h2>
@@ -133,6 +146,8 @@ footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);color:v
 <li>기기 내 데이터는 이용자가 삭제하거나 앱을 제거할 때까지 유지됩니다.</li>
 <li>AdMob·Firebase가 처리하는 데이터는 Google의 정책과 이용자의 Firebase/AdMob 설정에 따라
   보관됩니다.</li>
+<li>선택 기능인 순위 점수(제3.4항)는 일일 순위 산출에 필요한 기간에만 보관하며, 언제든 이메일로 삭제를
+  요청할 수 있습니다.</li>
 </ul>
 <hr />
 <h2>8. 아동</h2>
